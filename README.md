@@ -11,3 +11,12 @@ following environment variables drive its operation:
   `self` would set an A record for `self.<CLOUDFLARE_ZONE>`.
 * `INTERVAL` - interval to wait between checking external address. defaults to
   `300s`.
+
+### Running
+
+A docker image `nickethier/cfddns` is available on the Docker Hub.
+
+Example:
+```
+$> docker run --rm -e CLOUDFLARE_EMAIL -e CLOUDFLARE_TOKEN -e CLOUDFLARE_ZONE=example.com -e RECORD=home nickethier/cfddns
+```
