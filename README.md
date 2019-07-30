@@ -1,4 +1,4 @@
-## cf-ddns
+## cfddns
 
 `cfddns` is a very simple utility that will automatically update an A record
 through Cloudflare's API with the current detected external IP address. The
